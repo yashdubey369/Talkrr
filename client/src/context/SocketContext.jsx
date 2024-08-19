@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5000", {
+			const socket = io("https://talkrr-w1l3.onrender.com", {
 				query: {
 					userId: authUser.user._id,
 				},
