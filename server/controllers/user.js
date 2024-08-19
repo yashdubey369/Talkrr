@@ -55,7 +55,7 @@ export async function handlePostSignUp(req, res) {
     generateTokenAndSetCookie(entry._id, res);
     // console.log(entry);
 
-    return res.status(201).json({ msg: "Success", User: entry });
+    return res.status(201).json({ msg: "Success", user: entry });
   } catch (error) {
     console.log("error in signup", error.message);
     return res.status(500).json({ msg: "Internal Server Error" });
