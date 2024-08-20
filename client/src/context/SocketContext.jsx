@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://talkrr-w1l3.onrender.com", {
+			const socket = io("https://talkrr-ix9ld143d-yashdubey369s-projects.vercel.app/", {
 				query: {
 					userId: authUser.user._id,
 				},
